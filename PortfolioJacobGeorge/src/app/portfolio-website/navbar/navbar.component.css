@@ -3,12 +3,15 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: darkgrey;
+    background-color: rgb(50, 50, 50);
     color: aliceblue;
     font-family: "Lobster" sans-serif;
     font-size: 20px;
     font-style: normal;
 }
+.navbar h1{
+    font-size: larger;
+    color: #ffffff; /* Changed text color for better contrast */}
 
 .nav-links{
     list-style: none;

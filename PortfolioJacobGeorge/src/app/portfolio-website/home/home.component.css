@@ -1,28 +1,54 @@
-.home-container{
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.home-container {
     text-align: center;
     padding: 50px;
-    background-color: azure;
-    font-family: "Lobster", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    background-color: #f0f0f0; /* Changed to a lighter background color */
 }
 
-.thumb-container{
+.thumb-container {
     overflow: hidden;
-    border-radius: px;
+    border-radius: 50%; /* Rounded border for circular shape */
+    width: 600px; /* Adjust width and height for responsive design */
+    height: 600px;
+    margin: 0 auto 20px; /* Center the container and add space below */
+    border: 20px solid rgb(50, 50, 50); /* Add a border with some padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
-.thumb-image{
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
+.thumb-image {
+    width: 100%;
+    height: 100%; /* Set height to 100% to fill the circular container */
+    display: block; /* Ensure the image takes up the full width of its container */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 50%; /* Ensure the image is circular */
 }
 
-.image-container{
-    flex:1;
+
+.text-container {
+    max-width: 600px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the container */
 }
 
-.image-container img{
-    max-width: 100%;
-    border-radius: 10px;
+.text-container h1 {
+    font-size: 2.5em;
+    color: #333; /* Changed text color for better contrast */
+    margin-bottom: 10px; /* Add space below the heading */
 }
+
+.text-container p {
+    font-size: 1.2em;
+    color: #666; /* Changed text color for better contrast */
+    margin: 0; /* Remove default margin */
+}
+
+.animate_fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+
+
+
